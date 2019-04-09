@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingLeft="24dp"
+	android:paddingTop="8dp"
+	android:paddingRight="24dp"
+	android:paddingBottom="8dp">
+
+	<com.google.android.material.textfield.TextInputLayout
+		android:id="@+id/textFeedURL"
+		style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Feed URL">
+
+		<com.google.android.material.textfield.TextInputEditText
+			android:id="@+id/textFeedURLEdit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textUri"
+			android:maxLines="1" />
+	</com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

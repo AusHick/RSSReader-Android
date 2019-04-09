@@ -1,0 +1,61 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/cardContainer"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:cardCornerRadius="24dp"
+	app:cardElevation="8dp">
+
+	<LinearLayout
+		android:id="@+id/cardLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/imagePreview"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:scaleType="fitCenter"
+			tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+		<TextView
+			android:id="@+id/textTitle"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:singleLine="true"
+			android:text="Article Title"
+			android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+		<TextView
+			android:id="@+id/textPubDate"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="16dp"
+			android:layout_marginEnd="8dp"
+			android:text="March 11, 1993 @ 9:48 PM"
+			android:textAllCaps="true"
+			android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+		<TextView
+			android:id="@+id/textDescription"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in enim et nisl maximus interdum. Mauris sit amet porta mauris. Donec commodo metus non lectus molestie semper. Nunc varius lectus sed ex vulputate aliquam. Proin tristique faucibus lacinia. Curabitur quis erat metus. Sed tincidunt massa eu ex hendrerit, at volutpat leo ultricies. Maecenas volutpat tincidunt luctus. Donec ornare purus non nibh aliquet tincidunt. Suspendisse tempus tempus urna, nec gravida elit efficitur in. Fusce fermentum, dolor vitae interdum condimentum, diam ipsum vehicula mauris, vitae consequat sapien urna non lorem."
+			android:textAppearance="@android:style/TextAppearance.Material.Body1" />
+
+		<TextView
+			android:id="@+id/textSource"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
+			android:layout_marginBottom="8dp"
+			android:text="Source: Google"
+			android:textAlignment="textEnd" />
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

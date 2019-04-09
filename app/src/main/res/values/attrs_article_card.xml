@@ -1,0 +1,8 @@
+<resources>
+	<declare-styleable name="ArticleCard">
+		<attr name="title" format="string" />
+		<attr name="pubDate" format="string" />
+		<attr name="description" format="string" />
+		<attr name="preview" format="reference" />
+	</declare-styleable>
+</resources>
